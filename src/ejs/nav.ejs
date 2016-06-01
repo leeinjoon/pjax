@@ -1,0 +1,16 @@
+<%
+var data1 = jsonData1;
+var data2 = jsonData2;
+var data3 = jsonData3;
+-%>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarEexample7">
+                <ul class="nav navbar-nav">
+                    <li><a href="<%= data1.id %>_<%= data1.pic %>.html"><%= data1.name %> ページへ</a></li>
+                    <li><a href="<%= data2.id %>_<%= data2.pic %>.html"><%= data2.name %> ページへ</a></li>
+                    <li><a href="<%= data3.id %>_<%= data3.pic %>.html"><%= data3.name %> ページへ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>

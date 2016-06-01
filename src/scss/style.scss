@@ -1,0 +1,169 @@
+//@import "define";
+
+/* Sanitize */
+@import "sanitize";
+
+//* iconFont */
+//@import "material_icons";
+
+//* 初期化 */
+//@import "init";
+
+/*-----------------------------------
+ * @ 共通：テンプレートクラス
+ ------------------------------------*/
+//@import "templateClass";
+
+/*-----------------------------------
+ * @ 共通：ヘッダー
+ * <div id="__header">
+ ------------------------------------*/
+//@import "header";
+
+/*-----------------------------------
+ * @ 共通：フッター
+ * <div id="__footer">
+ ------------------------------------*/
+//@import "footer";
+
+/*-----------------------------------
+ * @ 共通：コンテンツ（パンくず）
+ * <div class="__breadcrumbs">
+ ------------------------------------*/
+//@import "breadcrumbs";
+
+
+/*-----------------------------------
+ * @ 共通：コンテンツ
+ * <div id="__contents">
+ ------------------------------------*/
+//@import "contents";
+
+body * {
+    text-align: center;
+}
+@for $i from 1 through 3 {
+    #zt0#{$i} {
+        background-color: rgba(random(255), random(255), random(255), 0.5);
+    }
+}
+.sample {
+    article {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #changeContent {
+        padding: 50px 0;
+    }
+    .pjaxLink {
+        margin: 30px 0;
+    }
+    .thumbnail {
+        display: inline-block;
+        text-align: center;
+    }
+    
+}
+
+/* SP */
+@media only screen and ( max-width: 640px ) {
+
+}
+
+/*表示アニメーションCSS*/
+#main {
+	-webkit-animation-duration: 0.7s;
+	animation-duration: 0.7s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+// @-webkit-keyframes fadeOut {
+// 	0% {
+// 		opacity: 1;
+// 		-webkit-transform: translateY(0);
+// 	}
+// 	100% {
+// 		opacity: 0;
+// 		-webkit-transform: translateY(-50px);
+//     // transform: scale(1.03);
+// 	}
+// }
+//
+// @keyframes fadeOut {
+// 	0% {
+// 		opacity: 1;
+// 		transform: translateY(0);
+// 	}
+// 	100% {
+// 		opacity: 0;
+// 		transform: translateY(-50px);
+//     // transform: scale(1.03);
+// 	}
+// }
+
+// @-webkit-keyframes fadeOut2 {
+// 	0% {
+// 		opacity: 1;
+// 		-webkit-transform: translateY(0);
+// 	}
+// 	100% {
+// 		opacity: 0;
+// 		-webkit-transform: translateY(-50px);
+// 	}
+// }
+//
+// @keyframes fadeOut2 {
+// 	0% {
+// 		opacity: 1;
+// 		transform: translateY(0);
+// 	}
+// 	100% {
+// 		opacity: 0;
+// 		transform: translateY(-50px);
+// 	}
+// }
+
+// .fadeOut {
+// 	-webkit-animation-name: fadeOut;
+// 	animation-name: fadeOut;
+// }
+//
+// .fadeOut2 {
+// 	-webkit-animation-name: fadeOut2;
+// 	animation-name: fadeOut2;
+// }
+
+//#fresh__contents {
+//  opacity: 0;
+//}
+
+.fadeOut {
+	-webkit-animation: fadeOut .5s cubic-bezier(.55,0,.1,1) both;
+	animation: fadeOut .5s cubic-bezier(.55,0,.1,1) both;
+}
+@-webkit-keyframes fadeOut {
+  0% { opacity: 1; -webkit-transform: scale(1.0); }
+  100% { opacity: 0; -webkit-transform: scale(1.02); }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+  100% { opacity: 0; -webkit-transform: scale(1.02); transform: scale(1.02); }
+}
+
+.fadeIn {
+	-webkit-animation: fadeIn .6s cubic-bezier(.55,0,.1,1) both;
+	animation: fadeIn .6s cubic-bezier(.55,0,.1,1) both;
+}
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0; -webkit-transform: scale(0.95); }
+  100% { opacity: 1; -webkit-transform: scale(1.0); }
+}
+@keyframes fadeIn {
+  0%   { opacity: 0; -webkit-transform: scale(0.95); transform: scale(0.95); }
+  100% { opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+}
+
+
+// Guide
+//@import "guide";
