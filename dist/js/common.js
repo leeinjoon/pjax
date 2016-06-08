@@ -19,6 +19,9 @@ $(function() {
        console.log("フェードイン＼(^o^)／");
        $('#fresh__contents').attr({'class': 'fadeIn'});
        $('body').css('overflow', '');
+       var location = window.location.pathname + window.location.search;
+       console.log(location);
+       ga('send', 'pageview', location);
    });
 
 });
